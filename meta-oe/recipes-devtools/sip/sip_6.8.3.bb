@@ -13,6 +13,8 @@ inherit pypi setuptools3 python3native
 PYPI_PACKAGE = "sip"
 SRC_URI[sha256sum] = "888547b018bb24c36aded519e93d3e513d4c6aa0ba55b7cc1affbd45cf10762c"
 
+SRC_URI += "file://sip-build-cross-platform-support.patch"
+
 RDEPENDS:${PN} = " \
     python3-core \
     python3-packaging \
